@@ -7021,6 +7021,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -56827,7 +56843,7 @@
         
   
   <span class="md-ellipsis">
-    2367. 算术三元组的数目
+    2367. 等差三元组的数目
   </span>
   
 
@@ -73333,7 +73349,7 @@
         
   
   <span class="md-ellipsis">
-    3153. 所有数对中数位不同之和
+    3153. 所有数对中数位差之和
   </span>
   
 
@@ -75791,6 +75807,174 @@
   
   <span class="md-ellipsis">
     3269. Constructing Two Increasing Arrays 🔒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3270/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3270. 求出数字答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3271/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3271. 哈希分割字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3272/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3272. 统计好整数的数目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3273/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3273. 对 Bob 造成的最少伤害
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3274/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3274. 检查棋盘方格颜色是否相同
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3275/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3275. 第 K 近障碍物查询
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3276/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3276. 选择矩阵中单元格的最大得分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3277/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3277. 查询子数组最大异或值
   </span>
   
 
@@ -83025,19 +83209,19 @@
 <h2 id="_1">题目描述</h2>
 <!-- description:start -->
 
-<p>给你一个 <code>m</code> 行 <code>n</code> 列的二维网格 <code>grid</code> 和一个整数 <code>k</code>。你需要将 <code>grid</code> 迁移 <code>k</code> 次。</p>
+<p>给你一个 <code>m</code> 行 <code>n</code>&nbsp;列的二维网格&nbsp;<code>grid</code>&nbsp;和一个整数&nbsp;<code>k</code>。你需要将&nbsp;<code>grid</code>&nbsp;迁移&nbsp;<code>k</code>&nbsp;次。</p>
 
 <p>每次「迁移」操作将会引发下述活动：</p>
 
 <ul>
-    <li>位于 <code>grid[i][j]</code> 的元素将会移动到 <code>grid[i][j + 1]</code>。</li>
-    <li>位于 <code>grid[i][n - 1]</code> 的元素将会移动到 <code>grid[i + 1][0]</code>。</li>
-    <li>位于 <code>grid[m - 1][n - 1]</code> 的元素将会移动到 <code>grid[0][0]</code>。</li>
+    <li>位于 <code>grid[i][j]</code>（<code>j &lt; n - 1</code>）的元素将会移动到&nbsp;<code>grid[i][j + 1]</code>。</li>
+    <li>位于&nbsp;<code>grid[i][n&nbsp;- 1]</code> 的元素将会移动到&nbsp;<code>grid[i + 1][0]</code>。</li>
+    <li>位于 <code>grid[m&nbsp;- 1][n - 1]</code>&nbsp;的元素将会移动到&nbsp;<code>grid[0][0]</code>。</li>
 </ul>
 
-<p>请你返回 <code>k</code> 次迁移操作后最终得到的 <strong>二维网格</strong>。</p>
+<p>请你返回&nbsp;<code>k</code> 次迁移操作后最终得到的 <strong>二维网格</strong>。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -83064,17 +83248,17 @@
 <strong>输出：</strong>[[1,2,3],[4,5,6],[7,8,9]]
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-    <li><code>m == grid.length</code></li>
-    <li><code>n == grid[i].length</code></li>
-    <li><code>1 <= m <= 50</code></li>
-    <li><code>1 <= n <= 50</code></li>
-    <li><code>-1000 <= grid[i][j] <= 1000</code></li>
-    <li><code>0 <= k <= 100</code></li>
+    <li><code>m ==&nbsp;grid.length</code></li>
+    <li><code>n ==&nbsp;grid[i].length</code></li>
+    <li><code>1 &lt;= m &lt;= 50</code></li>
+    <li><code>1 &lt;= n &lt;= 50</code></li>
+    <li><code>-1000 &lt;= grid[i][j] &lt;= 1000</code></li>
+    <li><code>0 &lt;= k &lt;= 100</code></li>
 </ul>
 
 <!-- description:end -->

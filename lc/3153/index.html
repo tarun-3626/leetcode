@@ -26,7 +26,7 @@
     
     
       
-        <title>3153. 所有数对中数位不同之和 - LeetCode Wiki</title>
+        <title>3153. 所有数对中数位差之和 - LeetCode Wiki</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3153. 所有数对中数位不同之和
+              3153. 所有数对中数位差之和
             
           </span>
         </div>
@@ -480,6 +480,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -56754,7 +56770,7 @@
         
   
   <span class="md-ellipsis">
-    2367. 算术三元组的数目
+    2367. 等差三元组的数目
   </span>
   
 
@@ -73269,7 +73285,7 @@
           
   
   <span class="md-ellipsis">
-    3153. 所有数对中数位不同之和
+    3153. 所有数对中数位差之和
   </span>
   
 
@@ -73280,7 +73296,7 @@
         
   
   <span class="md-ellipsis">
-    3153. 所有数对中数位不同之和
+    3153. 所有数对中数位差之和
   </span>
   
 
@@ -75791,6 +75807,174 @@
   
   <span class="md-ellipsis">
     3269. Constructing Two Increasing Arrays 🔒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3270/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3270. 求出数字答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3271/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3271. 哈希分割字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3272/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3272. 统计好整数的数目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3273/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3273. 对 Bob 造成的最少伤害
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3274/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3274. 检查棋盘方格颜色是否相同
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3275/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3275. 第 K 近障碍物查询
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3276/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3276. 选择矩阵中单元格的最大得分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3277/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3277. 查询子数组最大异或值
   </span>
   
 
@@ -83025,7 +83209,7 @@
 
 <!-- problem:start -->
 
-<h1 id="3153"><a href="https://leetcode.cn/problems/sum-of-digit-differences-of-all-pairs">3153. 所有数对中数位不同之和</a></h1>
+<h1 id="3153"><a href="https://leetcode.cn/problems/sum-of-digit-differences-of-all-pairs">3153. 所有数对中数位差之和</a></h1>
 <p><a class="glightbox" href="https://img.shields.io/badge/来源-第 398 场周赛 Q3-4051B5?style=flat-square" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/来源-第 398 场周赛 Q3-4051B5?style=flat-square"></a> <a class="glightbox" href="https://img.shields.io/badge/难度-中等-4051B5?style=flat-square" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/难度-中等-4051B5?style=flat-square"></a> <a class="glightbox" href="https://img.shields.io/badge/分数-1645-4051B5?style=flat-square" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/分数-1645-4051B5?style=flat-square"></a></p>
 
 <h2 id="_1">题目描述</h2>
@@ -83033,9 +83217,9 @@
 
 <p>你有一个数组&nbsp;<code>nums</code>&nbsp;，它只包含 <strong>正</strong>&nbsp;整数，所有正整数的数位长度都 <strong>相同</strong>&nbsp;。</p>
 
-<p>两个整数的 <strong>数位不同</strong>&nbsp;指的是两个整数 <b>相同</b>&nbsp;位置上不同数字的数目。</p>
+<p>两个整数的 <strong>数位差</strong>&nbsp;指的是两个整数 <b>相同</b>&nbsp;位置上不同数字的数目。</p>
 
-<p>请你返回 <code>nums</code>&nbsp;中 <strong>所有</strong>&nbsp;整数对里，<strong>数位不同之和。</strong></p>
+<p>请你返回 <code>nums</code>&nbsp;中 <strong>所有</strong>&nbsp;整数对里，<strong>数位差之和。</strong></p>
 
 <p>&nbsp;</p>
 
@@ -83048,10 +83232,10 @@
 
 <p><strong>解释：</strong><br />
 计算过程如下：<br />
--&nbsp;<strong>1</strong>3 和&nbsp;<strong>2</strong>3 的数位不同为&nbsp;1 。<br />
-- 1<strong>3</strong> 和 1<strong>2</strong>&nbsp;的数位不同为&nbsp;1 。<br />
--&nbsp;<strong>23</strong> 和&nbsp;<strong>12</strong>&nbsp;的数位不同为&nbsp;2 。<br />
-所以所有整数数对的数位不同之和为&nbsp;<code>1 + 1 + 2 = 4</code>&nbsp;。</p>
+-&nbsp;<strong>1</strong>3 和&nbsp;<strong>2</strong>3 的数位差为&nbsp;1 。<br />
+- 1<strong>3</strong> 和 1<strong>2</strong>&nbsp;的数位差为&nbsp;1 。<br />
+-&nbsp;<strong>23</strong> 和&nbsp;<strong>12</strong>&nbsp;的数位差为&nbsp;2 。<br />
+所以所有整数数对的数位差之和为&nbsp;<code>1 + 1 + 2 = 4</code>&nbsp;。</p>
 </div>
 
 <p><strong class="example">示例 2：</strong></p>

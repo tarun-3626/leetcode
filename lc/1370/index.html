@@ -7021,6 +7021,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -56827,7 +56843,7 @@
         
   
   <span class="md-ellipsis">
-    2367. 算术三元组的数目
+    2367. 等差三元组的数目
   </span>
   
 
@@ -73333,7 +73349,7 @@
         
   
   <span class="md-ellipsis">
-    3153. 所有数对中数位不同之和
+    3153. 所有数对中数位差之和
   </span>
   
 
@@ -75791,6 +75807,174 @@
   
   <span class="md-ellipsis">
     3269. Constructing Two Increasing Arrays 🔒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3270/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3270. 求出数字答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3271/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3271. 哈希分割字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3272/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3272. 统计好整数的数目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3273/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3273. 对 Bob 造成的最少伤害
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3274/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3274. 检查棋盘方格颜色是否相同
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3275/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3275. 第 K 近障碍物查询
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3276/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3276. 选择矩阵中单元格的最大得分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3277/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3277. 查询子数组最大异或值
   </span>
   
 
@@ -83045,38 +83229,22 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>s = &quot;aaaabbbbcccc&quot;
-<strong>输出：</strong>&quot;abccbaabccba&quot;
-<strong>解释：</strong>第一轮的步骤 1，2，3 后，结果字符串为 result = &quot;abc&quot;
-第一轮的步骤 4，5，6 后，结果字符串为 result = &quot;abccba&quot;
-第一轮结束，现在 s = &quot;aabbcc&quot; ，我们再次回到步骤 1
-第二轮的步骤 1，2，3 后，结果字符串为 result = &quot;abccbaabc&quot;
-第二轮的步骤 4，5，6 后，结果字符串为 result = &quot;abccbaabccba&quot;
+<pre>
+<strong>输入：</strong>s = "aaaabbbbcccc"
+<strong>输出：</strong>"abccbaabccba"
+<strong>解释：</strong>第一轮的步骤 1，2，3 后，结果字符串为 result = "abc"
+第一轮的步骤 4，5，6 后，结果字符串为 result = "abccba"
+第一轮结束，现在 s = "aabbcc" ，我们再次回到步骤 1
+第二轮的步骤 1，2，3 后，结果字符串为 result = "abccbaabc"
+第二轮的步骤 4，5，6 后，结果字符串为 result = "abccbaabccba"
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>s = &quot;rat&quot;
-<strong>输出：</strong>&quot;art&quot;
-<strong>解释：</strong>单词 &quot;rat&quot; 在上述算法重排序以后变成 &quot;art&quot;
-</pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre><strong>输入：</strong>s = &quot;leetcode&quot;
-<strong>输出：</strong>&quot;cdelotee&quot;
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre><strong>输入：</strong>s = &quot;ggggggg&quot;
-<strong>输出：</strong>&quot;ggggggg&quot;
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre><strong>输入：</strong>s = &quot;spo&quot;
-<strong>输出：</strong>&quot;ops&quot;
+<pre>
+<strong>输入：</strong>s = "rat"
+<strong>输出：</strong>"art"
+<strong>解释：</strong>单词 "rat" 在上述算法重排序以后变成 "art"
 </pre>
 
 <p>&nbsp;</p>

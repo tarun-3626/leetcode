@@ -7021,6 +7021,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -56827,7 +56843,7 @@
         
   
   <span class="md-ellipsis">
-    2367. 算术三元组的数目
+    2367. 等差三元组的数目
   </span>
   
 
@@ -73333,7 +73349,7 @@
         
   
   <span class="md-ellipsis">
-    3153. 所有数对中数位不同之和
+    3153. 所有数对中数位差之和
   </span>
   
 
@@ -75791,6 +75807,174 @@
   
   <span class="md-ellipsis">
     3269. Constructing Two Increasing Arrays 🔒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3270/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3270. 求出数字答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3271/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3271. 哈希分割字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3272/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3272. 统计好整数的数目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3273/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3273. 对 Bob 造成的最少伤害
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3274/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3274. 检查棋盘方格颜色是否相同
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3275/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3275. 第 K 近障碍物查询
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3276/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3276. 选择矩阵中单元格的最大得分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3277/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3277. 查询子数组最大异或值
   </span>
   
 
@@ -83019,9 +83203,9 @@
 <h2 id="_1">题目描述</h2>
 <!-- description:start -->
 
-<p>给出由小写字母组成的字符串&nbsp;<code>S</code>，<strong>重复项删除操作</strong>会选择两个相邻且相同的字母，并删除它们。</p>
+<p>给出由小写字母组成的字符串&nbsp;<code>s</code>，<strong>重复项删除操作</strong>会选择两个相邻且相同的字母，并删除它们。</p>
 
-<p>在 S 上反复执行重复项删除操作，直到无法继续删除。</p>
+<p>在 <code>s</code> 上反复执行重复项删除操作，直到无法继续删除。</p>
 
 <p>在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。</p>
 
@@ -83029,10 +83213,11 @@
 
 <p><strong>示例：</strong></p>
 
-<pre><strong>输入：</strong>&quot;abbaca&quot;
-<strong>输出：</strong>&quot;ca&quot;
+<pre>
+<strong>输入：</strong>"abbaca"
+<strong>输出：</strong>"ca"
 <strong>解释：</strong>
-例如，在 &quot;abbaca&quot; 中，我们可以删除 &quot;bb&quot; 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重复项。之后我们得到字符串 &quot;aaca&quot;，其中又只有 &quot;aa&quot; 可以执行重复项删除操作，所以最后的字符串为 &quot;ca&quot;。
+例如，在 "abbaca" 中，我们可以删除 "bb" 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重复项。之后我们得到字符串 "aaca"，其中又只有 "aa" 可以执行重复项删除操作，所以最后的字符串为 "ca"。
 </pre>
 
 <p>&nbsp;</p>
@@ -83040,8 +83225,8 @@
 <p><strong>提示：</strong></p>
 
 <ol>
-    <li><code>1 &lt;= S.length &lt;= 20000</code></li>
-    <li><code>S</code> 仅由小写英文字母组成。</li>
+    <li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+    <li><code>s</code> 仅由小写英文字母组成。</li>
 </ol>
 
 <!-- description:end -->
