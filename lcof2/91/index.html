@@ -83254,7 +83254,7 @@
 <!-- solution:start -->
 
 <h3 id="_3">方法一</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">Java</label><label for="__tabbed_1_3">C++</label><label for="__tabbed_1_4">Go</label><label for="__tabbed_1_5">TypeScript</label><label for="__tabbed_1_6">Rust</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">Java</label><label for="__tabbed_1_3">C++</label><label for="__tabbed_1_4">Go</label><label for="__tabbed_1_5">TypeScript</label><label for="__tabbed_1_6">Rust</label><label for="__tabbed_1_7">Swift</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -83396,6 +83396,32 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 </div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">minCost</span><span class="p">(</span><span class="kc">_</span> <span class="n">costs</span><span class="p">:</span> <span class="p">[[</span><span class="nb">Int</span><span class="p">]])</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nv">r</span> <span class="p">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">g</span> <span class="p">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">b</span> <span class="p">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">cost</span> <span class="k">in</span> <span class="n">costs</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nv">_r</span> <span class="p">=</span> <span class="n">r</span><span class="p">,</span> <span class="n">_g</span> <span class="p">=</span> <span class="n">g</span><span class="p">,</span> <span class="n">_b</span> <span class="p">=</span> <span class="n">b</span>
+            <span class="n">r</span> <span class="p">=</span> <span class="bp">min</span><span class="p">(</span><span class="n">_g</span><span class="p">,</span> <span class="n">_b</span><span class="p">)</span> <span class="o">+</span> <span class="n">cost</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">g</span> <span class="p">=</span> <span class="bp">min</span><span class="p">(</span><span class="n">_r</span><span class="p">,</span> <span class="n">_b</span><span class="p">)</span> <span class="o">+</span> <span class="n">cost</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">b</span> <span class="p">=</span> <span class="bp">min</span><span class="p">(</span><span class="n">_r</span><span class="p">,</span> <span class="n">_g</span><span class="p">)</span> <span class="o">+</span> <span class="n">cost</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">min</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="bp">min</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
 </div>
 </div>
 <!-- solution:end -->
@@ -83429,6 +83455,11 @@
     
     <nav>
       
+        <a href="https://github.com/klever34" class="md-author" title="@klever34">
+          
+          <img src="https://avatars.githubusercontent.com/u/12745225?v=4&size=72" alt="klever34">
+        </a>
+      
         <a href="https://github.com/yanglbme" class="md-author" title="@yanglbme">
           
           <img src="https://avatars.githubusercontent.com/u/21008209?v=4&size=72" alt="yanglbme">
@@ -83444,12 +83475,13 @@
           <img src="https://avatars.githubusercontent.com/u/70502828?v=4&size=72" alt="YangFong">
         </a>
       
-        <a href="https://github.com/maolonglong" class="md-author" title="@maolonglong">
-          
-          <img src="https://avatars.githubusercontent.com/u/50797868?v=4&size=72" alt="maolonglong">
-        </a>
       
       
+        
+          <a href="https://github.com/doocs/leetcode/blob/main/lcof2/%E5%89%91%E6%8C%87%20Offer%20II%20091.%20%E7%B2%89%E5%88%B7%E6%88%BF%E5%AD%90/README.md" class="md-author md-author--more">
+            +1
+          </a>
+        
       
     </nav>
   </span>
