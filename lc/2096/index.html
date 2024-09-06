@@ -7039,6 +7039,8 @@
       
         
       
+        
+      
     
     
       
@@ -75817,7 +75819,7 @@
         
   
   <span class="md-ellipsis">
-    3269. Constructing Two Increasing Arrays 🔒
+    3269. 构建两个递增数组 🔒
   </span>
   
 
@@ -76007,6 +76009,27 @@
   
   <span class="md-ellipsis">
     3278. 寻找数据科学家职位的候选人 II 🔒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3279/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3279. Maximum Total Area Occupied by Pistons 🔒
   </span>
   
 
@@ -83761,7 +83784,7 @@
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">lca</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">q</span><span class="p">);</span>
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">lca</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">right</span><span class="p">,</span><span class="w"> </span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">q</span><span class="p">);</span>
 
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">node</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">left</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">right</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">node</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">left</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">right</span><span class="p">;</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">dfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">node</span><span class="o">:</span><span class="w"> </span><span class="kt">TreeNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[])</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
@@ -83865,7 +83888,7 @@
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">lca</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">q</span><span class="p">);</span>
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">lca</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">right</span><span class="p">,</span><span class="w"> </span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">q</span><span class="p">);</span>
 
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">node</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">left</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">right</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">node</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">right</span><span class="p">;</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">dfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">node</span><span class="p">,</span><span class="w"> </span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
