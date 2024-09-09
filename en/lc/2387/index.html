@@ -57223,9 +57223,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#solution-1" class="md-nav__link">
+  <a href="#solution-1-two-binary-searches" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution 1
+      Solution 1: Two Binary Searches
     </span>
   </a>
   
@@ -78785,7 +78785,10 @@
 <h2 id="solutions">Solutions</h2>
 <!-- solution:start -->
 
-<h3 id="solution-1">Solution 1</h3>
+<h3 id="solution-1-two-binary-searches">Solution 1: Two Binary Searches</h3>
+<p>The median is actually the $target = \left \lceil \frac{m \times n}{2} \right \rceil$-th number after sorting.</p>
+<p>We perform a binary search on the elements of the matrix $x$, counting the number of elements in the grid that are greater than $x$, denoted as $cnt$. If $cnt \ge target$, it means the median is on the left side of $x$ (including $x$); otherwise, it is on the right side.</p>
+<p>The time complexity is $O(m \times \log n \times \log M)$, where $m$ and $n$ are the number of rows and columns of the grid, respectively, and $M$ is the maximum element in the grid. The space complexity is $O(1)$.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">Java</label><label for="__tabbed_1_3">C++</label><label for="__tabbed_1_4">Go</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
