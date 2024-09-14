@@ -5,9 +5,7 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/2400-2499/2419.Lo
 rating: 1495
 source: Weekly Contest 312 Q2
 tags:
-    - Bit Manipulation
-    - Brainteaser
-    - Array
+    
 ---
 
 <!-- problem:start -->
